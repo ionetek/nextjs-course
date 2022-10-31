@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <>
-      <header>
+      <header className='mb-5'>
         <Link href='/'>
           <a className='logo'>Evento</a>
         </Link>
@@ -15,12 +15,22 @@ function Header() {
           <ul>
             <li>
               <Link href='/'>
-                <a className={currentRoute === '/' && 'active'}>Featured</a>
+                <a className={currentRoute === '/' ? 'active' : ''}>Featured</a>
               </Link>
             </li>
             <li>
               <Link href='/events'>
-                <a className={currentRoute === '/events' && 'active'}>All events</a>
+                <a className={currentRoute === '/events' ? 'active' : ''}>All events</a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/products'>
+                <a className={currentRoute === '/products' ? 'active' : ''}>Products</a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/profile'>
+                <a className={currentRoute === '/profile' ? 'active' : ''}>Profile</a>
               </Link>
             </li>
           </ul>

@@ -1,4 +1,3 @@
-import '../styles/Home.module.css'
 import { getFeaturedEvents } from '../data'
 import EventList from '../components/event-list/EventList'
 
@@ -7,8 +6,10 @@ export default function Home() {
 
   return (
     <div className='container'>
-      <h1>Featured events</h1>
-
+      <div className='mb-5'>
+        <h1>Featured events</h1>
+        <hr />
+      </div>
       <EventList items={featuredEvents} />
     </div>
   )

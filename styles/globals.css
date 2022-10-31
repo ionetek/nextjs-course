@@ -66,18 +66,18 @@ a {
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    grid-gap: 8px;
-    gap: 8px;
-    height: 44px;
-    padding: 0 16px;
-    border-radius: 9999px;
-    font-size: 16px;
-    letter-spacing: -.025em;
-    font-weight: 400;
-    border: 1px solid transparent;
-    box-sizing: inherit;
+    /* display: flex;
+     align-items: center;
+     grid-gap: 8px;
+     gap: 8px;
+     height: 44px;
+     padding: 0 16px;
+     border-radius: 9999px;
+     font-size: 16px;
+     letter-spacing: -.025em;
+     font-weight: 400;
+     border: 1px solid transparent;
+     box-sizing: inherit;*/
 }
 
 ul {
@@ -93,6 +93,20 @@ ul {
 
 .text-secondary {
     color: #666;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.flex-row > div {
+
+}
+
+.form-control {
+    display: block;
 }
 
 @media (prefers-color-scheme: dark) {
