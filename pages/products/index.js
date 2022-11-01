@@ -5,7 +5,7 @@ function Products(props) {
   return (
     <div className='container'>
       <h1>Products</h1>
-      <p className='text-secondary'>Product list loaded on server by http request</p>
+      <p className='text-secondary'>Product list loaded on server when building</p>
       <ul>
         {products.map((product) => (
           <li key={product.id}>
