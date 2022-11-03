@@ -33,6 +33,11 @@ function Header() {
                 <a className={currentRoute === '/profile' ? 'active' : ''}>Profile</a>
               </Link>
             </li>
+            <li>
+              <Link href='/reviews'>
+                <a className={currentRoute === '/reviews' ? 'active' : ''}>Reviews</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

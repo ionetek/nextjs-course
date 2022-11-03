@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 function EventItem(props) {
   const { title, image, date, location, id } = props
@@ -16,7 +17,13 @@ function EventItem(props) {
       <li className='mb-5'>
         <Link href={`/events/${id}`}>
           <a>
-            <img src={image} alt={title} className='rounded img-fluid mb-2' />
+            <Image
+              src={image}
+              alt={title}
+              width={1280}
+              height={832}
+              className='rounded img-fluid'
+            />
           </a>
         </Link>
         <div>
